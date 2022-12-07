@@ -12,7 +12,7 @@ const createProduct = require('../controllers/createProduct')
 const delProduct = require('../controllers/delProduct')
 const editProduct = require('../controllers/editProduct')
 
-
+const getUsers = require('../controllers/getUsers')
 
 //GET
 router.get('/', home)
@@ -22,6 +22,8 @@ router.get('/verproduct/:id',checkId, verProduct)
 router.get('/list', (req, res) =>{
     res.send(productsList);
 });
+
+ router.get('/getusers', getUsers)
 
 
 

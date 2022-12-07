@@ -1,4 +1,4 @@
-const productsList= [
+const productsList = [
     {
         suplemento: "Creatina",
         marca: "Star",
